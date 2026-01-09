@@ -3,7 +3,7 @@ session_start();
 
 // Si no hay sesión válida, redirigir al formulario de login
 if (!isset($_SESSION['user_id'])) {
-    header('Location: login');
+    header('Location: login.php');  //le puse el .php alv si se jode me voa sordear
     exit();
 }
 ?>
