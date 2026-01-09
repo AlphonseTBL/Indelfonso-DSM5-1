@@ -85,3 +85,37 @@ $conn->close();
 <?php if (isset($error)): ?>
     <p style="color: red;"><?php echo $error; ?></p>
 <?php endif; ?>
+
+//EL FOking BODY
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceso Mantenimiento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h1>Acceso Mantenimiento</h1>
+
+    <form method="POST" action="login.php">
+        <label>Email</label>
+        <input type="text" name="email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <button type="submit">Entrar</button>
+    </form>
+
+    <?php if (isset($error)): ?>
+        <p style="color:red; margin-top:10px;">
+            <?php echo $error; ?>
+        </p>
+    <?php endif; ?>
+</div>
+
+</body>
+</html>
